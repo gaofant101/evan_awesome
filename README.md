@@ -67,7 +67,7 @@
 - Bootstrap [Link](http://www.bootcss.com/)
 - Ant.Design [Link](https://ant.design/index-cn)
 
-### /Users/f/Documents/workspace/evan_awesome/编辑器/README.md编辑器
+### 编辑器
 
 - SublimeText
 - Atom
