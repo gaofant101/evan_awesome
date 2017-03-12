@@ -1,6 +1,1 @@
-### 待编辑...
-
-
-
-
-
+### HTML5解决的问题1.  定义语义性章节的`<div>`元素的用法,如果没有为class属性赋以特殊的值，使生成自动生成大纲的算法变得不可能 ("一个div元素`<div>` 是不是大纲的一部分, 定义的是章节还是子章节?" 或者 "该div元素 `<div>`是仅仅为了样式化?")。换句话说, HTML4规范在章节的定义和章节的范围都不精确。 自动生成大纲是重要的,尤其是在倾向于通过根据文档大纲内容去展示内容的辅助技术（ assistive technology）。 HTML5 在自动生成大纲算法的过程中去掉了div元素（`<div>`），并新增了一个元素，section元素（`<section>`）。2. 合并多个文档是困难的：主文档中包含子文档意味着改变HTML标题元素的级别，以使得文档大纲能够保持下来。 这个已经被HTML5的新的章节元素解决了，因为新引入的元素(`<article>`,`<section>`, `<nav>` 和 `<aside>`) 总是距离其最近的祖先章节的子章节, 与子文档章节内部的标题没有关系.3. HTML4中，所有的章节都是文档大纲中的一部分。但是文档并不总是这样。文档可以包含那些不是大纲的特殊章节, 但是与文档有关的, 就像广告块和解释区域。 HTML5 引入aside元素 `<aside>`使得这样的节点不会插入到主纲要中。 4. 另外, 因为在 HTML4中任何的部分都是文档大纲的一部分, 没有办法产生与网站相关而不是与文档相关的节段，比如logos,menus,目录或版权信息和法律声明。为了这个目的, HTML5 引入了三个特殊的节段 元素： 包含链接集合的nav元素`<nav>` , 例如目录, 包含网站相关信息的footer元素`<footer> `和header元素 `<header>` 。## example    <section>        <h1>Forest elephants</h1>     <section>        <h1>Introduction</h1>        <p>In this section, we discuss the lesser known forest elephants.</p>    </section>    <section>        <h1>Habitat</h1>        <p>Forest elephants do not live in trees but among them.</p>    </section>        <aside>                <p>advertising block</p>        </aside>    </section>    <footer>        <p>(c) 2010 The Example company</p>    </footer>
