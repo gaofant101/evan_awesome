@@ -45,5 +45,50 @@ Mac 环境下
 就表示安装成功
 
 
+### Atom 使用
 
 
+##### 插件
+
+
+`javascript` 下的 `JavaScript Snippets` `language-javascript-jsx` `es6-javascript`
+
+`language-babel` 语法支持 ES6、JSX、Flow …，还支持预览 babel 或 react 编译结果
+
+`react` 下的 `react-snippets` `react-es6-snippets`
+
+`vue` 下的 `language-vue`
+
+`Markdown Preview` Markdown语法插件
+
+`markdown-scroll-sync` markdown文件，右侧实时滚动
+
+`markdown-writer` 使你更好的书写 markdown 文件
+
+`emmet`HTML增强
+
+`autoclose-html` 自动闭合 `html` 标签
+
+`block-comment` 生成块级注释
+
+`highlight-line` 当前行高亮
+
+`highlight-selected` 高亮当前文件中所有匹配的选择文字
+
+`file-icon` 文件图标
+
+`filecolor` 文件颜色
+
+`Atom Material` 主题
+
+##### 设置
+
+设置Tab 为空格
+
+
+`setting` -> `Editot` -> `Soft Tabs` 去掉选择 -> `Tab length` 设置indent 为 `4`
+
+设置字体和字号
+
+
+`file` -> `Stylesheet` -> `atom-text-editor{ }` 设置css样式 , `.tree-view` 左侧导航的样式
