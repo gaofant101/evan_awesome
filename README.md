@@ -84,6 +84,7 @@
 - fis3
 - grunt
 - git
+- yarn
 
 ### 实战
 
