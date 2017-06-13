@@ -29,4 +29,8 @@ X-DNS-Prefetch-Control 头控制着浏览器的 DNS 预读取功能。 DNS 预�
 
 因为预读取会在后台执行，所以 DNS 很可能在链接对应的东西出现之前就已经解析完毕。这能够减少用户点击链接时的延迟。
 
-[DNS 预读取](https://developer.mozilla.org/zh-CN/docs/Controlling_DNS_prefetching)
+[DNS 预读取](https://developer.mozilla.org/zh-CN/docs/Controlling_DNS_prefetching)  
+
+## 无线优化资料  
+
+[无线Web开发经验谈](http://am-team.github.io/amg/dev-exp-doc.html#无线web开发简介)
