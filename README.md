@@ -41,22 +41,15 @@
 
 ### 图像 
 
-- SVG
+待拓展...
 
-> SVG(可缩放矢量图形)让你可以用一系列矢量（线条）和形状来描绘图像，无论尺寸多大他们都可以平滑缩放。
+### 框架 [章节](https://github.com/evanhunt/evan_awesome/tree/master/%E6%A1%86%E6%9E%B6)    
 
-- WebGL
+##### vuejs
 
-> WebGL通过引用一种符合OpenGL ES 2.0规范的API，将3D图形引入Web中，在HTML中可以使用` <canvas> `元素来使用WebGL。
-
-
-### 框架 
-
-- Reactjs
-- Vuejs 
-- Angular2
-- Bootstrap [Link](http://www.bootcss.com/)
-- Ant.Design [Link](https://ant.design/index-cn)
+- [Vuex](https://github.com/evanhunt/evan_awesome/blob/master/%E6%A1%86%E6%9E%B6/vuejs/vuex.md)
+- [生命周期](https://github.com/evanhunt/evan_awesome/blob/master/%E6%A1%86%E6%9E%B6/vuejs/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
+- [过滤器](https://github.com/evanhunt/evan_awesome/blob/master/%E6%A1%86%E6%9E%B6/vuejs/%E8%BF%87%E6%BB%A4%E5%99%A8.md)
 
 ### 编辑器
 
