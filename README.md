@@ -1,16 +1,13 @@
-### HTML5 [Link](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5)
+### HTML5   
 
-> HTML5 是定义 HTML 标准的最新的演进。 该术语表示两个不同的概念：
-它是一个新版本的HTML语言，具有新的元素，属性和行为，
-和更大的技术集，允许更多样化和强大的网站和应用程序。这个集合有时称为HTML5和朋友，通常缩写为HTML5。
-
-- 语义：能够让你更恰当地描述你的内容是什么。
-- 连通性：能够让你和服务器之间通过创新的新技术方法进行通信。
-- 离线 & 存储：能够让网页在客户端本地存储数据以及更高效地离线运行。
-- 多媒体：使 video 和 audio 成为了在所有 Web 中的一等公民。
-- 2D/3D 绘图 & 效果：提供了一个更加分化范围的呈现选择。
-- 性能 & 集成：提供了非常显著的性能优化和更有效的计算机硬件使用。
-- 设备访问 Device Access：能够处理各种输入和输出设备。
+- [语义](https://github.com/evanhunt/evan_awesome/blob/master/HTML5/%E8%AF%AD%E4%B9%89.md)
+- [媒体](https://github.com/evanhunt/evan_awesome/blob/master/HTML5/%E5%AA%92%E4%BD%93.md)
+- [图像](https://github.com/evanhunt/evan_awesome/blob/master/HTML5/%E5%9B%BE%E5%83%8F.md)
+- [离线 & 存储](https://github.com/evanhunt/evan_awesome/blob/master/HTML5/%E7%A6%BB%E7%BA%BF%20%26%20%E5%AD%98%E5%82%A8.md)
+- [geolocation](https://github.com/evanhunt/evan_awesome/blob/master/HTML5/geolocation%20%E5%AF%B9%E8%B1%A1.md)
+- [XMLHttpRequest 2](https://github.com/evanhunt/evan_awesome/blob/master/HTML5/XMLHttpRequest%202.md)
+- [Web Workers](https://github.com/evanhunt/evan_awesome/blob/master/HTML5/Web%20Workers.md)
+- [同层播放器接入规范-副本](https://github.com/evanhunt/evan_awesome/blob/master/HTML5/%E5%90%8C%E5%B1%82%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A5%E5%85%A5%E8%A7%84%E8%8C%83-%E5%89%AF%E6%9C%AC.md)
 
 ### CSS [Link](https://developer.mozilla.org/zh-CN/docs/Web/CSS)
 
