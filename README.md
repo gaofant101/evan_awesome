@@ -51,24 +51,17 @@
 - [生命周期](https://github.com/evanhunt/evan_awesome/blob/master/%E6%A1%86%E6%9E%B6/vuejs/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F.md)
 - [过滤器](https://github.com/evanhunt/evan_awesome/blob/master/%E6%A1%86%E6%9E%B6/vuejs/%E8%BF%87%E6%BB%A4%E5%99%A8.md)
 
-### 编辑器
+### 编辑器 [章节](https://github.com/evanhunt/evan_awesome/tree/master/%E7%BC%96%E8%BE%91%E5%99%A8)   
 
-- SublimeText
-- Atom
-- WebStorm
-- VSCode
-- MarkDown
-- vim
+- [Atom](https://github.com/evanhunt/evan_awesome/blob/master/%E7%BC%96%E8%BE%91%E5%99%A8/atom.md)
+- [ESLint配置](https://github.com/evanhunt/evan_awesome/blob/master/%E7%BC%96%E8%BE%91%E5%99%A8/eslint%E9%85%8D%E7%BD%AE.md)
+- [NPM](https://github.com/evanhunt/evan_awesome/blob/master/%E7%BC%96%E8%BE%91%E5%99%A8/npm%E9%85%8D%E7%BD%AE.md)
+- [NODE](https://github.com/evanhunt/evan_awesome/blob/master/%E7%BC%96%E8%BE%91%E5%99%A8/%E5%AE%89%E8%A3%85nodejs.md)
 
-### 工具
+### 工具 [章节](https://github.com/evanhunt/evan_awesome/tree/master/%E5%B7%A5%E5%85%B7)   
 
-- webpack
-- gulp
-- rollup
-- fis3
-- grunt
-- git
-- yarn
+- [gulp](https://github.com/evanhunt/evan_awesome/blob/master/%E5%B7%A5%E5%85%B7/gulp.md)
+- [webpack](https://github.com/evanhunt/evan_awesome/blob/master/%E5%B7%A5%E5%85%B7/webpack.md)
 
 ### 实战 [章节](https://github.com/evanhunt/evan_awesome/tree/master/%E5%AE%9E%E6%88%98)   
 
