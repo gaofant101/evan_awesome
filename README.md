@@ -34,6 +34,7 @@
 - [数据类型](https://github.com/evanhunt/evan_awesome/blob/master/JavaScript/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.md)
 - [认识HTTP](https://github.com/evanhunt/evan_awesome/blob/master/JavaScript/%E8%AE%A4%E8%AF%86HTTP.md)
 - [认识Object](https://github.com/evanhunt/evan_awesome/blob/master/JavaScript/%E8%AE%A4%E8%AF%86Object.md)
+- [排序](https://github.com/evanhunt/evan_awesome/blob/master/JavaScript/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F.md)
 
 ### Web API [章节](https://developer.mozilla.org/zh-CN/docs/Web/Reference/API)
 
