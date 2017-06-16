@@ -70,11 +70,14 @@
 - git
 - yarn
 
-### 实战
+### 实战 [章节](https://github.com/evanhunt/evan_awesome/tree/master/%E5%AE%9E%E6%88%98)   
 
-- 优化 [Link](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/?hl=zh-cn)
-- HTTP
-- 正则
+- [CSRF](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/CSRF.md)
+- [Cookie](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/Cookie.md)
+- [XSS](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/XSS.md)
+- [异步加载](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD.md)
+- [性能优化](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md)
+- [检测浏览器版本](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/%E6%A3%80%E6%B5%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E7%89%88%E6%9C%AC.md)
 
 
 
