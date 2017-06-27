@@ -115,22 +115,22 @@ Mac 环境下
 
 // style the background color of the tree view
 .tree-view {
-	// background-color: whitesmoke;
-	font-size: 14px;
-	font-family: Courier New;
+    // background-color: whitesmoke;
+    font-size: 14px;
+    font-family: Courier New;
 }
 
 // style the background and foreground colors on the atom-text-editor-element itself
 atom-text-editor {
-	// color: white;
-	// background-color: hsl(180, 24%, 12%);
-	font-size: 17px;
-	font-family: Courier New;
+    // color: white;
+    // background-color: hsl(180, 24%, 12%);
+    font-size: 17px;
+    font-family: Courier New;
 }
 
 // style UI elements inside atom-text-editor
 atom-text-editor .cursor {
-	// border-color: red;
+    // border-color: red;
 }
 
 ```
