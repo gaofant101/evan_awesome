@@ -88,9 +88,49 @@ Mac 环境下
 设置Tab 为空格
 
 
-`setting` -> `Editot` -> `Soft Tabs` 去掉选择 -> `Tab length` 设置indent 为 `4`
+`setting` -> `Editot` -> `Tab Type` 选择 `soft` ; `Tab length` 设置indent 为 `4`
 
 设置字体和字号
 
 
-`file` -> `Stylesheet` -> `atom-text-editor{ }` 设置css样式 , `.tree-view` 左侧导航的样式
+`file` -> `Stylesheet` ->   
+
+```
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed and saved.
+ *
+ * Add your own CSS or Less to fully customize Atom.
+ * If you are unfamiliar with Less, you can read more about it here:
+ * http://lesscss.org
+ */
+
+
+/*
+ * Examples
+ * (To see them, uncomment and save)
+ */
+
+// style the background color of the tree view
+.tree-view {
+	// background-color: whitesmoke;
+	font-size: 14px;
+	font-family: Courier New;
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+	// color: white;
+	// background-color: hsl(180, 24%, 12%);
+	font-size: 17px;
+	font-family: Courier New;
+}
+
+// style UI elements inside atom-text-editor
+atom-text-editor .cursor {
+	// border-color: red;
+}
+
+```
