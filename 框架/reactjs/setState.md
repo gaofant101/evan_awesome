@@ -12,10 +12,10 @@ setState(updater, [callback])
 
 `setState()`将永远导致重新渲染,除非`shouldComponentUpdate()`返回`false`.如果使用可变对象并且无法实现条件呈现逻辑`shouldComponentUpdate()`,则`setState()`只有当新状态与先前状态不同时才调用,才能避免不必要的重渲染.
 
-## `setState` 使用动态key值改怎么写
+## `setState` 使用动态`key`值该怎么写
 
 ```
-example(key, value) {
+example = (key, value) => {
     this.setState({
         key: value,
     })
@@ -68,3 +68,5 @@ example(key, value) {
 [React setState](https://facebook.github.io/react/docs/react-component.html#setstate)
 
 [Object 计算的属性名](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+
+[Reactjs setState() with a dynamic key name?](https://stackoverflow.com/questions/29280445/reactjs-setstate-with-a-dynamic-key-name)
