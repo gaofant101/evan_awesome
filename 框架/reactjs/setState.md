@@ -55,7 +55,7 @@ console.log(config); // { size: 12, mobileSize: 4 }
 从上面示例可以看出`[key]`这种写法是可以用于对象的字面值了   
 回到上最初的示例代码:
 ```diff
-example(key, value) {
+example = (key, value) => {
     this.setState({
 -        key: value,
 +        [key]: value,
