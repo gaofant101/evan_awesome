@@ -70,3 +70,5 @@ example = (key, value) => {
 [Object 计算的属性名](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Object_initializer)
 
 [Reactjs setState() with a dynamic key name?](https://stackoverflow.com/questions/29280445/reactjs-setstate-with-a-dynamic-key-name)
+
+[Reactjs handling-multiple-inputs](https://facebook.github.io/react/docs/forms.html#handling-multiple-inputs)
