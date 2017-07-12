@@ -15,3 +15,8 @@
 
 一些按键能切换指示灯的状态,如 `Caps Lock` 键, `Num Lock` 键和 `Scroll Lock` 键.
 在 `Windows` 和 `Linux` 上, 这些按键仅发送 `keydown` 事件和 `keyup` 事件.
+
+
+## 参考
+
+[KeyboardEvent](https://developer.mozilla.org/zh-CN/docs/Web/API/KeyboardEvent)
