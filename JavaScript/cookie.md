@@ -71,4 +71,5 @@
 
 ## 参考
 
+[Document.cookie MDN](https://developer.mozilla.org/en-US/docs/Web/API/document/cookie)
 [cookie](https://segmentfault.com/a/1190000004556040)
