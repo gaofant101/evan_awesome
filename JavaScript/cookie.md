@@ -1,7 +1,7 @@
 ### cookie
 
 浏览器中的一个API，健指对，只有4kb，一般存储会话信息，随请求一起
-
+```
 	/**
 	|*|
 	|*|  :: cookies.js ::
@@ -66,3 +66,9 @@
 	        return aKeys
 	    }
 	}
+	
+```
+
+## 参考
+
+[cookie](https://segmentfault.com/a/1190000004556040)
