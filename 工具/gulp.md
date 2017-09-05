@@ -3,7 +3,7 @@
 ## 编写任务
 
 ```javascript
-// npm install --save-dev gulp run-sequence gulp-cache gulp-concat gulp-babel babel-preset-es2015 gulp-jshint gulp-uglify node-sass gulp-sass gulp-autoprefixer gulp-clean-css gulp-csslint gulp-imagemin gulp-rev gulp-rev-collector gulp-htmlmin del gulp-livereload babel-core gulp-postcss@6.4.0 postcss-px2rem
+// npm install --save-dev gulp run-sequence gulp-cache gulp-concat gulp-babel babel-preset-es2015 gulp-jshint gulp-uglify node-sass gulp-sass gulp-autoprefixer gulp-clean-css gulp-csslint gulp-imagemin gulp-rev gulp-rev-collector gulp-htmlmin del babel-core gulp-postcss@6.4.0 postcss-px2rem browser-sync
 
 const gulp          = require('gulp');
 const runSequence   = require('run-sequence');
@@ -99,20 +99,17 @@ gulp.task('clean', (cb) =>
 );
 
 gulp.task('watch', ['clean'], () => {
-    gulp.watch([config.cssSrc, config.jsSrc, config.imgSrc], ['dev']);
+    gulp.watch([config.cssSrc, config.jsSrc, config.imgSrc, dist + '/*.html'], ['dev']);
 });
 
 gulp.task('browser', ()=> {
     browserSync.init({
         port: 8031,
         open: false,
-        startPath: '/dist',
         server: {
             directory: true,
-            middleware: function(req,res,next){
-                next();
-            },
-            baseDir: './',
+            baseDir: 'dist/',
+            index: 'index.html',
         },
     });
     gulp.watch(dist + '/*.html').on('change', reload);
@@ -120,6 +117,7 @@ gulp.task('browser', ()=> {
 
 gulp.task(('dev'), (done) => {
     runSequence(
+        ['clean'],
         ['styles'],
         ['script'],
         ['images'],
@@ -130,7 +128,6 @@ gulp.task(('dev'), (done) => {
 
 gulp.task('default', ['dev', 'watch', 'browser'])
 
-
 ```
 
 ## 记录
@@ -138,3 +135,9 @@ gulp.task('default', ['dev', 'watch', 'browser'])
 #### `sass`
 
 这里使用了 `sass` ,如果 `windows` 那么要配置 `Ruby` 环境;
+
+## 参考
+
+[Browsersync / 说明文档](http://www.browsersync.cn/docs/gulp/)   
+
+[package.json文件](http://javascript.ruanyifeng.com/nodejs/packagejson.html)
