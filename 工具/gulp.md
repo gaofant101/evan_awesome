@@ -99,7 +99,7 @@ gulp.task('clean', (cb) =>
 );
 
 gulp.task('watch', ['clean'], () => {
-    gulp.watch([config.cssSrc, config.jsSrc, config.imgSrc, dist + '/*.html'], ['dev']);
+    gulp.watch([config.cssSrc, config.jsSrc, config.imgSrc, config.htmlSrc], ['dev']);
 });
 
 gulp.task('browser', ()=> {
@@ -122,11 +122,13 @@ gulp.task(('dev'), (done) => {
         ['script'],
         ['images'],
         ['html'],
+        ['browser'],
         done
     );
 });
 
-gulp.task('default', ['dev', 'watch', 'browser'])
+gulp.task('default', ['dev', 'watch'])
+
 
 ```
 
