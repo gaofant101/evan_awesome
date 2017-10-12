@@ -24,14 +24,19 @@ const revCollector  = require('gulp-rev-collector');
 const minifyHTML    = require('gulp-htmlmin');
 const del           = require('del');
 const browserSync   = require('browser-sync').create();
-const reload    = browserSync.reload;
+const reload        = browserSync.reload;
+const proxy         = require('http-proxy-middleware');
 
-const dist = 'dist';
+const isProd = process.env.NODE_ENV === 'production';
+const dist = isProd ? 'build' : 'dist';
+const moveFile = {
+    js: 'src/js/*.min.js',
+}
 const config = {
-    cssSrc: 'src/styles/*.scss',
+    cssSrc: ['src/styles/*.scss'],
     cssDist: dist + '/styles',
     cssRev: 'rev/styles',
-    jsSrc: 'src/js/*.js',
+    jsSrc: ['src/js/*.js', '!src/js/*.min.js'],
     jsDist: dist + '/js',
     jsRev: 'rev/js',
     imgSrc: 'src/images/**/*',
@@ -43,7 +48,10 @@ const config = {
 
 gulp.task('styles', () => {
     const processors = [px2rem({remUnit: 75})];
-    return gulp.src(config.cssSrc)
+    return gulp.src(['rev/**/*.json', 'src/styles/*.scss'])
+        .pipe(revCollector({
+            replaceReved: true,
+        }))
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(csslint())
@@ -65,7 +73,7 @@ gulp.task('script', () =>
     .pipe(babel({
         presets: ['es2015']
     }))
-    .pipe(concat('main.js'))
+    // .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(rev())
     .pipe(gulp.dest(config.jsDist))
@@ -88,46 +96,81 @@ gulp.task('images', () =>
 gulp.task('html', () =>
     gulp.src(['rev/**/*.json', 'src/*.html'])
     .pipe(revCollector({
-        replaceReved: true,
-    }))
+        replaceReved: true, // 此处有坑, 文件名同名, hash码会有影响
+    }))
     .pipe(minifyHTML({collapseWhitespace: true}))
     .pipe(gulp.dest(dist + '/'))
 );
 
+gulp.task('move', () =>
+    gulp.src(moveFile.js)
+    .pipe(gulp.dest(config.jsDist))
+);
+
 gulp.task('clean', (cb) =>
-    del([config.cssDist, config.jsDist, config.imgDist, dist + '/*.html'], cb)
+    del([config.cssDist, config.jsDist, config.imgDist], cb)
 );
 
 gulp.task('watch', ['clean'], () => {
-    gulp.watch([config.cssSrc, config.jsSrc, config.imgSrc, config.htmlSrc], ['dev']);
+    gulp.watch([config.cssSrc, config.jsSrc, config.imgSrc, config.htmlSrc], ['clean', 'dev']);
 });
 
 gulp.task('browser', ()=> {
+    const middleware = proxy(
+        [], // api字段
+        {
+            target: '', // 目标URL
+            changeOrigin: true,
+            logLevel: 'debug',
+            ws: true,
+            secure: false,
+        }
+    );
     browserSync.init({
         port: 8031,
+        https: true,
         open: false,
         server: {
             directory: true,
             baseDir: 'dist/',
-            index: 'index.html',
         },
+        middleware: [middleware],
     });
     gulp.watch(dist + '/*.html').on('change', reload);
 });
 
 gulp.task(('dev'), (done) => {
     runSequence(
+        ['styles'],
+        ['script'],
+        ['images'],
+        ['html'],
+        ['move'],
+        done
+    );
+});
+
+gulp.task(('build'), (done) => {
+    runSequence(
         ['clean'],
         ['styles'],
         ['script'],
         ['images'],
         ['html'],
-        ['browser'],
+        ['move'],
         done
     );
 });
 
-gulp.task('default', ['dev', 'watch'])
+gulp.task('default', (done) => {
+    runSequence(
+        ['watch'],
+        ['dev'],
+        ['browser'],
+        done
+    );
+})
+
 
 
 ```
