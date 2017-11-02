@@ -10,14 +10,15 @@
 - [同层播放器接入规范-副本](https://github.com/evanhunt/evan_awesome/blob/master/HTML5/%E5%90%8C%E5%B1%82%E6%92%AD%E6%94%BE%E5%99%A8%E6%8E%A5%E5%85%A5%E8%A7%84%E8%8C%83-%E5%89%AF%E6%9C%AC.md)
 
 ### CSS [章节](https://github.com/evanhunt/evan_awesome/tree/master/CSS)  
-
-- [@Font-face](https://github.com/evanhunt/evan_awesome/blob/master/CSS/%40Font-face.md)
-- [Animation](https://github.com/evanhunt/evan_awesome/blob/master/CSS/Animation.md)
-- [Flex](https://github.com/evanhunt/evan_awesome/blob/master/CSS/Flex.md)
-- [Transition](https://github.com/evanhunt/evan_awesome/blob/master/CSS/Transition.md)
-- [层叠](https://github.com/evanhunt/evan_awesome/blob/master/CSS/%E5%B1%82%E5%8F%A0.md)
-- [盒模型](https://github.com/evanhunt/evan_awesome/blob/master/CSS/%E7%9B%92%E6%A8%A1%E5%9E%8B.md)
+- [盒子模型](https://github.com/evanhunt/evan_awesome/blob/master/CSS/%E7%9B%92%E6%A8%A1%E5%9E%8B.md)
 - [选择器](https://github.com/evanhunt/evan_awesome/blob/master/CSS/%E9%80%89%E6%8B%A9%E5%99%A8.md)
+- [层叠](https://github.com/evanhunt/evan_awesome/blob/master/CSS/%E5%B1%82%E5%8F%A0.md)
+- [@Font-face](https://github.com/evanhunt/evan_awesome/blob/master/CSS/%40Font-face.md)
+- [Flex](https://github.com/evanhunt/evan_awesome/blob/master/CSS/Flex.md)
+- [Transitions & Animations](https://github.com/evanhunt/evan_awesome/blob/master/CSS/Transitions%20%26%20Animations.md)
+- [css浮动(float)](https://github.com/evanhunt/evan_awesome/blob/master/CSS/css%E6%B5%AE%E5%8A%A8(float).md)
+- [web动画性能](https://github.com/evanhunt/evan_awesome/blob/master/CSS/web%E5%8A%A8%E7%94%BB%E6%80%A7%E8%83%BD.md)
+- [外边距(margin)坍塌](https://github.com/evanhunt/evan_awesome/blob/master/CSS/%E5%A4%96%E8%BE%B9%E8%B7%9D(margin)%E5%9D%8D%E5%A1%8C.md)
 
 ### JavaScript [章节](https://github.com/evanhunt/evan_awesome/tree/master/JavaScript)  
 
