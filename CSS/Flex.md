@@ -31,57 +31,186 @@
 
 根据弹性容器的主轴与侧轴,弹性项目的宽和高中,对应主轴的称为主轴尺寸 `(main size)` ,对应侧轴的称为 侧轴尺寸 `(cross size)`.
 
-## @ 示例
+## @ 属性
+
+### `flex-direction`
+
+```css
+.box {
+    flex-direction: column | column-reverse | row | row-reverse;
+}
+```
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071005.png)
+
+- row(默认值): 主轴为水平方向,起点在左端
+- row-reverse: 主轴为水平方向,起点在右端
+- column: 主轴为垂直方向,起点在上沿
+- column-reverse: 主轴为垂直方向,起点在下沿
+
+### `flex-wrap`
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071006.png)
+
+```css
+.box{
+    flex-wrap: nowrap | wrap | wrap-reverse;
+}
+```
+
+#### `nowrap`(默认): 不换行
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071007.png)
+
+#### `wrap`: 换行,第一行在上方
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071008.jpg)
+
+#### `wrap-reverse`: 换行,第一行在下方
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071009.jpg)
+
+### `flex-flow`
+
+```css
+.box {
+    flex-flow: <flex-direction> || <flex-wrap>;
+}
+```
+
+### `justify-content`
+
+```css
+.box {
+    justify-content: flex-start | flex-end | center | space-between | space-around;
+}
+```
+
+- `flex-start` (默认值): 左对齐
+- `flex-end`: 右对齐
+- `center`:  居中
+- `space-between`: 两端对齐,项目之间的间隔都相等
+- `space-around`: 每个项目两侧的间隔相等 所以,项目之间的间隔比项目与边框的间隔大一倍
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071010.png)
+
+
+### `align-content`
+
+```css
+.box {
+    align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+}
+```
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071012.png)
+
+- `flex-start`: 与交叉轴的起点对齐
+- `flex-end`: 与交叉轴的终点对齐
+- `center`: 与交叉轴的中点对齐
+- `space-between`: 与交叉轴两端对齐,轴线之间的间隔平均分布
+- `space-around`: 每根轴线两侧的间隔都相等所以,轴线之间的间隔比轴线与边框的间隔大一倍
+- `stretch`(默认值): 轴线占满整个交叉轴
+
+
+## @ 项目属性
+
+### `order`
+
+```css
+.item {
+    order: <integer>;
+}
+```
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071013.png)
+
+### `flex-grow`
+
+```css
+.item {
+    flex-grow: <number>; /* default 0 */
+}
+```
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071014.png)
+
+### `flex-shrink`
+
+```css
+.item {
+    flex-shrink: <number>; /* default 1 */
+}
+```
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071015.jpg)
+
+如果所有项目的 `flex-shrink` 属性都为1,当空间不足时,都将等比例缩小.如果一个项目的 `flex-shrink` 属性为0,其他项目都为1,则空间不足时,前者不缩小.
+
+### `flex-basis`
+
+```css
+.item {
+    flex-basis: <length> | auto; /* default auto */
+}
+```
+
+### `flex`
+
+`flex` 属性是 `flex-grow`, `flex-shrink` 和 `flex-basis` 的简写,默认值为 `0 1 auto`.后两个属性可选.
+
+```css
+.item {
+    flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+}
+```
+
+### `align-self`
+
+`align-self` 属性允许单个项目有与其他项目不一样的对齐方式,可覆盖 `align-items` 属性。默认值为 `auto`,表示继承父元素的 `align-items` 属性,如果没有父元素,则等同于 `stretch`
+
+```css
+.item {
+    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+```
+
+![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071016.png)
+
+## @ 左边固定, 右边自适应 示例
 
 ```html
-<div class="flex">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-    <div class="item">5</div>
-    <div class="item">6</div>
-    <div class="item">7</div>
-    <div class="item">8</div>
-    <div class="item">9</div>
+<div class="demo">
+	<div class="left">左边固定宽度为100px，这里设置了高度为auto</div>
+	<div class="right">右边宽度自适应，并且左右两个区域是等高的，这里设置了高度为200px</div>
 </div>
 ```
 
 ```css
-.flex{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    width: 800px;
-    height: 400px;
-    background: #956;
-    flex-direction: row;
+.demo{
+	display: flex;
 }
-.item{
-    flex: 1;
-    background: #695;
-    height: 100px;
-    margin-right: 10px;
-    line-height: 100px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #fff;
+
+.demo .left{
+	width: 100px;
+	min-width: 100px;
+	max-width: 100px;
+	height: auto;
+	background: #B4D3F7;
+	flex-grow: 0;
 }
-```
 
-![flex 示例 001](https://raw.githubusercontent.com/evanhunt/evan_awesome/master/file/images/flex001.png)
-
-```
-.flex{
-    position: relative;
-    z-index: 1;
-    display: flex;
-    width: 800px;
-    height: 400px;
-    background: #956;
-    flex-direction: row-reverse;
+.demo .right{
+	margin-left: 10px;
+	width: auto;
+	height: 200px;
+	background: #F7E8B4;
+	flex-grow: 1;
 }
 ```
 
-![flex 示例 002](https://raw.githubusercontent.com/evanhunt/evan_awesome/master/file/images/flex002.png)
+## @ 参考
+
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" target="_blank">使用 CSS 弹性盒子</a>
+
+<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank">Flex 布局教程：语法篇</a>
