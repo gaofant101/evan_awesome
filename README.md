@@ -48,18 +48,13 @@
 
 ## @ 工具
 
-- [gulp](https://github.com/evanhunt/evan_awesome/blob/master/%E5%B7%A5%E5%85%B7/gulp.md)
-- [webpack](https://github.com/evanhunt/evan_awesome/blob/master/%E5%B7%A5%E5%85%B7/webpack.md)
 - [Atom](https://github.com/evanhunt/evan_awesome/blob/master/%E7%BC%96%E8%BE%91%E5%99%A8/atom.md)
-- [ESLint配置](https://github.com/evanhunt/evan_awesome/blob/master/%E7%BC%96%E8%BE%91%E5%99%A8/eslint%E9%85%8D%E7%BD%AE.md)
-- [NPM](https://github.com/evanhunt/evan_awesome/blob/master/%E7%BC%96%E8%BE%91%E5%99%A8/npm%E9%85%8D%E7%BD%AE.md)
 - [NODE](https://github.com/evanhunt/evan_awesome/blob/master/%E7%BC%96%E8%BE%91%E5%99%A8/%E5%AE%89%E8%A3%85nodejs.md)
 
 ## @ 实战
 
-- [CSRF](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/CSRF.md)
-- [Cookie](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/Cookie.md)
-- [XSS](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/XSS.md)
+- [CSRF && XSS](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/CSRF.md)
 - [异步加载](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD.md)
 - [性能优化](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96.md)
+- [CSSOM是什么]()
 - [检测浏览器版本](https://github.com/evanhunt/evan_awesome/blob/master/%E5%AE%9E%E6%88%98/%E6%A3%80%E6%B5%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E7%89%88%E6%9C%AC.md)
