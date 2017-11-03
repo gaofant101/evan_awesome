@@ -1,4 +1,4 @@
-## setState
+## @ `setState`
 
 ```
 setState(updater, [callback])
@@ -12,9 +12,9 @@ setState(updater, [callback])
 
 `setState()`将永远导致重新渲染,除非`shouldComponentUpdate()`返回`false`.如果使用可变对象并且无法实现条件呈现逻辑`shouldComponentUpdate()`,则`setState()`只有当新状态与先前状态不同时才调用,才能避免不必要的重渲染.
 
-## `setState` 使用动态`key`值该怎么写
+## @ `setState` 使用动态`key`值该怎么写
 
-```
+```javascript
 example = (key, value) => {
     this.setState({
         key: value,
@@ -30,7 +30,7 @@ example = (key, value) => {
 
 从`ECMAScript 2015`开始,对象初始化语法开始支持计算的属性名.其允许在`[]`中放入表达式,计算结果可以当做属性名.这种用法和用方括号访问属性非常类似,也许你已经用来读取和设置属性了.现在同样的语法也可以用于对象字面值了:
 
-```
+```javascript
 // Computed property names (ES6)
 var i = 0;
 var a = {
@@ -63,7 +63,7 @@ example = (key, value) => {
 }
 ```
 
-## 参考资料
+## @ 参考资料
 
 [React setState](https://facebook.github.io/react/docs/react-component.html#setstate)
 
