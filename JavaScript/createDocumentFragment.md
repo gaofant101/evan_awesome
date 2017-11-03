@@ -1,10 +1,10 @@
-# 简介
+## @ 简介
 
 创建一个新的空白的文档片段( `DocumentFragment`).
 
-# 语法
+## @ 语法
 
-```
+```javascript
 let docFragment = document.createDocumentFragment();
 ```
 
@@ -14,7 +14,7 @@ let docFragment = document.createDocumentFragment();
 因为文档片段存在于内存中,并不在DOM树中,所以将子元素插入到文档片段时不会引起页面回流(reflow)
 (对元素位置和几何上的计算).因此,使用文档片段`document fragments` 通常会起到优化性能的作用(`better performance`).
 
-# 测试
+## @ 测试
 
 看文档解释觉得这个`API`很高大上,联想到`React&Vue`的虚拟`DOM`也是整片代码段映射到真是的`DOM`节点中;是不是这个原理呢;
 
@@ -75,9 +75,8 @@ document.body.innerHTML = "<p>Normal Append: " + ((new Date).getTime() - s) + "<
 [jsfiddle e.g. createDocumentFragment](https://jsfiddle.net/evan_g/1emeL3ru/)   
 [jsfiddle e.g. Normal](https://jsfiddle.net/evan_g/ngk6f4ek/)
 
-# 参考
+## @ 参考
 
 [MDN Document.createDocumentFragment()](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createDocumentFragment)   
 
 [stackoverflow](https://stackoverflow.com/questions/13239618/is-there-any-benefit-to-using-createdocumentfragment-as-opposed-to-an-out-of-dom)
-
