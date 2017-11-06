@@ -74,6 +74,20 @@ export const changeStatus = ({ commit }, status) => {
 export const getStatus = state => state. status
 ```
 
+## @ 注入
+
+```javascript
+new Vue({
+    router,
+    store,
+    template: `
+        <div id="app">
+            <router-view class="view"></router-view>
+        </div>
+  `
+}).$mount('#app')
+```
+
 ## @ 调用
 
 ```javascript
