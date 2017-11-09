@@ -83,3 +83,5 @@
 <a href="http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css">increase-your-sites-performance-with-hardware-accelerated-css</a>
 
 <a href="https://blog.tumult.com/2013/02/28/transform-translate-vs-top-left/">transform-translate-vs-top-left</a>
+
+[10 个原则让动画带你飞](https://github.com/xitu/gold-miner/blob/master/TODO/smooth-css-animations.md)
