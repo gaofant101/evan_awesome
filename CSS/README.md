@@ -10,8 +10,7 @@
 - 初始值、计算值、应用值和当前值
 - CSS 简写属性
 
+
+[css-tricks](https://css-tricks.com/)
+
 [深入了解 CSS3 新特性](https://www.ibm.com/developerworks/cn/web/1202_zhouxiang_css3/)
-
-
-
-
