@@ -1,6 +1,6 @@
-# @ `web` 动画性能
+# @`web` 动画性能
 
-## @ 动画帧
+## 动画帧
 
 ### 关于帧的概念
 
@@ -24,7 +24,7 @@
 - 帧率在 `30fps` 以下的动画,让人感觉到明显的卡顿和不适感
 - 帧率波动很大的动画,亦会使人感觉到卡顿
 
-## @ 小测试
+## 小测试
 
 ```html
 <div class="move">
@@ -72,16 +72,16 @@
 4. 优化动画的帧率,保证动画执行时间&&动画过程连贯性(先可以对着动画肉眼观察调,也可以借助 `chrome dev tool` 工具去查看每一帧的帧率进行动画视觉上的优化)
 5. `css3` 的 `transform` 是好东西(`transform` 做了哪些优化为什么性能好还没有找到资料,也许是浏览器底层做的优化, 这篇文章`transform-translate-vs-top-left`做了性能对比)
 
-## @ 参考
+# @参考
 
-<a href="https://developers.google.com/web/fundamentals/design-and-ux/animations/">Web Fundamentals 动画</a>
+[Web Fundamentals 动画](https://developers.google.com/web/fundamentals/design-and-ux/animations/)
 
-<a href="https://developers.google.com/web/tools/chrome-devtools/?hl=zh-cn">Chrome 开发者工具</a>
+[Chrome 开发者工具](https://developers.google.com/web/tools/chrome-devtools/?hl=zh-cn)
 
-<a href="http://alexorz.github.io/animation-performance-guide/">Web动画性能指南 Beta</a>
+[Web动画性能指南 Beta](http://alexorz.github.io/animation-performance-guide/)
 
-<a href="http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css">increase-your-sites-performance-with-hardware-accelerated-css</a>
+[increase-your-sites-performance-with-hardware-accelerated-css](http://blog.teamtreehouse.com/increase-your-sites-performance-with-hardware-accelerated-css)
 
-<a href="https://blog.tumult.com/2013/02/28/transform-translate-vs-top-left/">transform-translate-vs-top-left</a>
+[transform-translate-vs-top-left](https://blog.tumult.com/2013/02/28/transform-translate-vs-top-left/)
 
 [10 个原则让动画带你飞](https://github.com/xitu/gold-miner/blob/master/TODO/smooth-css-animations.md)

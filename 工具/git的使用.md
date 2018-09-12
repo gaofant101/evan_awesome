@@ -1,14 +1,14 @@
-## Git
+# @`Git`
 
 待编辑...
 
-### 查看远程分支
+## 查看远程分支
 
 ```
 git branch -a
 ```
 
-### 删除远程分支
+## 删除远程分支
 
 ```shell
 # 删除远程分支
@@ -23,7 +23,7 @@ git tag -d <tagname>
 git push origin :refs/tags/<tagname>
 ```
 
-### 删除不存在对应远程分支的本地分支
+## 删除不存在对应远程分支的本地分支
 
 ```shell
 # 开发者A 创建本地分支 origin/bugfixA1 推送到远程分支
@@ -36,13 +36,13 @@ git remote show origin // 查看所有origin状态  被删除分支被标记为
 git remote prune origin //删除本地 stale 状态的分支
 ```
 
-### 修改远程地址
+## 修改远程地址
 
 ```
  git remote set-url origin 新地址
 ```
 
-## @ 参考
+# @ 参考
 
 [Git: Delete a branch (local or remote)](https://makandracards.com/makandra/621-git-delete-a-branch-local-or-remote)
 [How do I delete a Git branch both locally and remotely?](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-both-locally-and-remotely)

@@ -15,7 +15,7 @@
 	// main.js
 	// 实例化Vue的filter
 	Object.keys(filters).forEach(k => Vue.filter(k, filters[k]))
-	
+
 
 &nbsp;
 

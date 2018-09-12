@@ -1,4 +1,4 @@
-## @ `HTTP`请求过程
+# @`HTTP`请求过程
 
 1. 建立`TCP/IP`链接,客户端和服务器通过`socket`三次握手进行链接
 
@@ -15,7 +15,7 @@
 10. 呈现数据
 
 
-### 状态码
+## 状态码
 
 - `100-199` 分类为"信息"
 - `200-299` 为"成功"
@@ -23,6 +23,6 @@
 - `400-499` 为"客户机错误"
 - `500-599` 为"服务器错误"
 
-## @ 参考
+# @参考
 
 [状态码和原因短语](https://www.ibm.com/support/knowledgecenter/zh/SSGMGV_3.2.0/com.ibm.cics.ts.internet.doc/topics/dfhtl_httpstatus.html)

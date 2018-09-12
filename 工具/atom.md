@@ -1,10 +1,10 @@
-# @ 使用指南
+# @使用指南
 
 官网 (https://atom.io/)
 
-## @设置代理
+## 设置代理
 
-### `window`
+## `window`
 
 ```
 C:Users\?\.atom\.apmrc配置文件（如果该目录下没有该配置文件：找到位置C:Users\?\.atom\.apm\.apmrc配置文件复制到C:Users\?\.atom目录下并删除内容）
@@ -14,7 +14,7 @@ http_proxy = http://127.0.0.1:useport
 https_proxy = http://127.0.0.1:useport
 ```
 
-### `mac`
+## `mac`
 ```
 apm config set strict-ssl false
 apm config set http-proxy https://127.0.0.1:port
@@ -22,13 +22,13 @@ apm config set https-proxy https://127.0.0.1:port
 
 ```
 
-### 取消 `APM` 代理
+## 取消 `APM` 代理
 
 ```
 Settings > Core > Use Proxy Settings When Calling APM
 ```
 
-## @ `Atom` 使用
+## `Atom` 使用
 
 ### 插件
 
@@ -69,7 +69,7 @@ Settings > Core > Use Proxy Settings When Calling APM
 
 #### 设置Tab 为空格
 
-`setting` -> `Editot` -> `Tab Type` 选择 `soft` ;   
+`setting` -> `Editot` -> `Tab Type` 选择 `soft` ;
 `Tab length` 设置indent 为 `4`
 
 #### 设置字体和字号
@@ -116,6 +116,6 @@ atom-text-editor .cursor {
 
 ```
 
-# @ `issues`
+# @`issues`
 
 Atom 1.28 crashes on macOS with Shadowsocks proxy (https://github.com/atom/atom/issues/17557)

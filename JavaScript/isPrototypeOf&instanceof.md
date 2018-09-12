@@ -1,22 +1,22 @@
-## @ `isPrototypeOf`
+# @`isPrototypeOf`
 
-`isPrototypeOf` 方法用于检测一个对象是否存在于另一个对象的原型链上.   
+`isPrototypeOf` 方法用于检测一个对象是否存在于另一个对象的原型链上.
 
-### 语法
+## 语法
 
 ```javascript
 prototypeObj.isPrototypeOf(object)
 ```
 
-### 参数
+## 参数
 
 `object`在该对象上的原型链上搜索
 
-### 返回值
+## 返回值
 
 `Boolean`
 
-### e.g.
+## e.g.
 
 ```javascript
 function Fee() {
@@ -46,11 +46,11 @@ if (Fi.prototype.isPrototypeOf(fum)) {
 }
 ```
 
-## @ `instanceof`
+# @`instanceof`
 
 `instanceof` 运算符用来测试一个对象在其原型链中存在一个构造函数的`prototype`属性.
 
-### 语法
+## 语法
 
 ```javascript
 object instanceof constructor
@@ -98,7 +98,7 @@ o3 instanceof C; // true
 目前的`ES`规范中,我们只能读取对象的原型而不能改变它,但借助于非标准的`__proto__`魔法属性,是可以
 实现的.比如执行`obj.__proto__` = {}之后,`obj instanceof Foo`就会返回`false`了.
 
-### e.g. 2
+## e.g. 2
 
 下面的代码使用了`instanceof`来证明:` String`和`Date`对象同时也属于`Object`类型.
 

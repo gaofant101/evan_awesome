@@ -1,17 +1,17 @@
-## @ `Object.prototype.hasOwnProperty()`
+# @`Object.prototype.hasOwnProperty()`
 
 
 `hasOwnProperty()` 方法会返回一个布尔值,其用来判断某个对象是否含有指定的属性.
 
 所有继承了 `Object` 的对象都会继承到 `hasOwnProperty` 方法.这个方法可以用来检测一个对象是否含有特定的自身属性;和 `in` 运算符不同,该方法会忽略掉那些从原型链上继承到的属性.
 
-### 语法
+## 语法
 
 ```javascript
 obj.hasOwnProperty(prop)
 ```
 
-### 参数
+## 参数
 
 `prop`要检测的属性  字符串 名称或者 Symbol
 

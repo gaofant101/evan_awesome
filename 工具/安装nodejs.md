@@ -1,9 +1,9 @@
-## @ 下载node
+# @`node`
 
 [官网](https://nodejs.org/zh-cn/download/)
 
 
-### 检测有没有安装成功
+## 检测有没有安装成功
 
 ```shell
 node -v
@@ -18,7 +18,7 @@ npm config set registry http://registry.npm.taobao.org/
 npm config set registry https://registry.npmjs.org/
 ```
 
-### 指定文件 `[node_modules]` 安装路径
+## 指定文件 `[node_modules]` 安装路径
 
 在你安装 `NODE` 的根目录下创建 `node_global` `node_cache` 2个文件夹
 

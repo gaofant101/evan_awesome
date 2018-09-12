@@ -1,8 +1,8 @@
-# @ `font-face`
+# @`font-face`
 
 `font-face` 是 `CSS3` 中一个新的功能,它可以使自定义字体嵌入到网页中;
 
-## @ 使用
+## 使用
 
 ```css
 /* 定义字体 */
@@ -40,8 +40,6 @@ h2 {
 
 `.svg` 字体是基于 `SVG` 字体渲染的一种格式,支持这种字体的浏览器有 `『Chrome4+,Safari3.1+,Opera10.0+,iOS Mobile Safari3.2+』`
 
-## @ 参考
+# @参考
 
-<a href="https://www.fontsquirrel.com/tools/webfont-generator" target="_blank">Webfont生成器</a>
-
-<a href="https://www.fontsquirrel.com/tools/webfont-generator" target="_blank">Webfont生成器</a>
+[Webfont生成器](https://www.fontsquirrel.com/tools/webfont-generator)

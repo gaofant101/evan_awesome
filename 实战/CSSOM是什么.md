@@ -1,6 +1,6 @@
-# @ `CSSOM` 是什么
+# @`CSSOM` 是什么
 
-## @ 什么是`CSSOM`
+## 什么是`CSSOM`
 
 - `CSSOM`代表 `CSS` 对象模型
 - 它基本上是在网页上找到的 `CSS` 样式的“地图”
@@ -9,10 +9,10 @@
 
 ![](https://varvy.com/performance/images/cssom-defined.png)
 
-`CSSOM`对于页面渲染至关重要.   
+`CSSOM`对于页面渲染至关重要.
 它是关键渲染路径的基本核心部分,并且了解它的作用是 `Web` 性能优化的重要组成部分(使网页加载速度更快).
 
-## @ `CSSOM` 是做什么的？
+## `CSSOM` 是做什么的？
 
 `CSSOM` 将样式表中的规则映射到页面对应的元素上.
 
@@ -20,7 +20,7 @@
 
 更确切地说,`CSSOM`识别 `tokens` 并把这些 `tokens` 转换成一个树结构上的对应的结点.所有结点以及它们所关联的页面中的样式就是所谓的 `CSS Object Model`
 
-## @ `Web` 浏览器使用 `CSSOM` 去渲染页面
+## `Web` 浏览器使用 `CSSOM` 去渲染页面
 
 `Web` 浏览器为了展示页面,需要经历以下四个步骤：
 
@@ -66,7 +66,7 @@
 简单来说,`CSSOM` 是展示任何东西的必需品.在 `CSSOM` 构建之前,所有东西都不会展示,如果你阻塞了 `CSSOM` 的构建, `CSSOM` 的构建就会消耗更长的时间,这就意味着页面的渲染也需要更长的时间.
 如果你的 `javascript` 阻塞了`CSSOM`的构建,你的用户就会面对更长时间的白屏.
 
-## @ 影响 `CSSOM` 的一般优化方式
+## 影响 `CSSOM` 的一般优化方式
 
 这里有几个首屏优化的最佳实践,可以帮助你让 `CSSOM` 构建地快一些(也就是让页面加载更快)
 
@@ -74,6 +74,6 @@
 - Make sure your pages are calling [stylesheets before javascripts](https://varvy.com/pagespeed/style-script-order.html)
 - Ensure you are [optimizing CSS delivery](https://varvy.com/pagespeed/optimize-css-delivery.html)
 
-## @ 参考
+# @参考
 
 [What is CSSOM?](https://varvy.com/performance/cssom.html)

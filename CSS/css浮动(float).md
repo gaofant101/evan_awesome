@@ -1,6 +1,6 @@
 # @浮动 `(float)` [译]
 
-## @ 什么是浮动?
+## 什么是浮动?
 
 CSS中的某些元素是块级元素,这意味着它们会自动启动新行.例如,如果您创建两个单词段落元素,它们将不会彼此流动,而会以不同的行显示.其他元素是内联元素.这意味着它们与以前的内容“排队”.一个例子是锚标签,它可以出现在另一个元素（如段落）中,而不会导致任何额外的空格或新行.
 
@@ -28,7 +28,7 @@ img {
 
 关于这个图像的行为的一个有趣的事情现在是浮动的是我们的其他内容实际上会尝试在可能的地方围绕它.如果我们调整我们的容器或浏览器窗口的大小来缩小文本,那么文本就会自动重新放置,从而不会影响图像.
 
-## @ 浮动规则
+## 浮动规则
 
 现在我们知道一个 `float` 是什么,以及它如何影响涉及元素的框.我们继续谈谈另外一些信息,许多开发人员可能至少不了解这些信息:管理浮动元素位置的规则.
 
@@ -74,7 +74,7 @@ li {
 
 ![](http://designshack.co.uk/wp-content/uploads/cssfloats101-11.jpg)
 
-## @ 清除浮动
+## 清除浮动
 
 浮动是方便的完成一些伟大的布局功能,如创建列的内容.但是,一旦声明,它们对您可能或可能不喜欢的文档的其余部分有影响.例如,假设我们想在一个左上方的列表项之后扔入一个段落,就像我们上面那样.
 
@@ -92,7 +92,7 @@ p {
 
 ![](http://designshack.co.uk/wp-content/uploads/cssfloats101-15.jpg)
 
-## @ 浮动怪癖和清除修复
+## 浮动怪癖和清除修复
 
 当给定元素只包含浮动元素时,会发生特殊的动作:父元素的高度折叠.为了说明这一点,假设我们想在我们在所有示例中使用的无序列表中放置背景颜色.如果列表中的元素没有浮动,那么我们只需要使用CSS将颜色应用到后台.
 
@@ -163,6 +163,6 @@ ul {
 }
 ```
 
-## @ 参考
+# @参考
 
-<a href="https://designshack.net/articles/css/everything-you-never-knew-about-css-floats/" target="_blank">everything-you-never-knew-about-css-floats</a>
+[everything-you-never-knew-about-css-floats](https://designshack.net/articles/css/everything-you-never-knew-about-css-floats/)

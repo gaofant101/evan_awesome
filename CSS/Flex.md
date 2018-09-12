@@ -1,9 +1,9 @@
-# @ `Flex` 布局
+# @`Flex`
 
 `CSS3` 弹性盒子 (`Flexible Box` 或 `Flexbox`),是一种用于在页面上布置元素的布局模式,使得当页面布局必须适应不同的屏幕尺寸和不同的显示设备时,元素可预测地运行.
 对于许多应用程序,弹性盒子模型提供了对块模型的改进,因为它不使用浮动,flex容器的边缘也不会与其内容的边缘折叠.
 
-## @ 弹性盒布局相关
+## 弹性盒布局相关
 
 ![](https://mdn.mozillademos.org/files/12998/flexbox.png)
 
@@ -31,7 +31,7 @@
 
 根据弹性容器的主轴与侧轴,弹性项目的宽和高中,对应主轴的称为主轴尺寸 `(main size)` ,对应侧轴的称为 侧轴尺寸 `(cross size)`.
 
-## @ 属性
+## 属性
 
 ### `flex-direction`
 
@@ -113,7 +113,7 @@
 - `stretch`(默认值): 轴线占满整个交叉轴
 
 
-## @ 项目属性
+## 项目属性
 
 ### `order`
 
@@ -177,7 +177,7 @@
 
 ![](http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071016.png)
 
-## @ 左边固定, 右边自适应 示例
+## 左边固定, 右边自适应 示例
 
 ```html
 <div class="demo">
@@ -208,9 +208,12 @@
 	flex-grow: 1;
 }
 ```
+[Demo](https://jsfiddle.net/evan_g/scef649h/)
 
-## @ 参考
+## `flexboxfroggy`
 
-<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes" target="_blank">使用 CSS 弹性盒子</a>
+一个学习 `flex` 布局的课程, [FLEXBOX FROGGY](https://flexboxfroggy.com/)
 
-<a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank">Flex 布局教程：语法篇</a>
+# @参考
+
+[使用 CSS 弹性盒子](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)

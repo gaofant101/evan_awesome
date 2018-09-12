@@ -1,4 +1,4 @@
-## @ Vuex
+# @Vuex
 
 `Vuex` 是一个专为 `Vue.js` 应用程序开发的状态管理模式.它采用集中式存储管理应用的所有组件的状态,并以相应的规则保证状态以一种可预测的方式发生变化.`Vuex` 也集成到 `Vue` 的官方调试工具 `devtools extension`,提供了诸如零配置的 `time-travel` 调试、状态快照导入导出等高级调试功能.
 
@@ -8,16 +8,16 @@
 - `view`,以声明方式将`state`映射到视图；
 - `actions`,响应在 `view` 上的用户输入导致的状态变化.
 
-![单一数据流](https://vuex.vuejs.org/zh-cn/images/flow.png)
+![单一数据流](https://vuex.vuejs.org/flow.png)
 
 但是,当我们的应用遇到多个组件共享状态时,单向数据流的简洁性很容易被破坏;
 
 - 多个视图依赖于同一状态.
 - 来自不同视图的行为需要变更同一状态.
 
-![多组建共享状态](https://vuex.vuejs.org/zh-cn/images/vuex.png)
+![多组建共享状态](https://vuex.vuejs.org/vuex.png)
 
-## @ 定义`Store`
+## 定义`Store`
 
 ```javascript
 import Vue from 'vue'
@@ -40,13 +40,13 @@ export default new Vuex.Store({
 })
 ```
 
-## @ 定义`type`
+## 定义`type`
 
 ```javascript
 export const CHANGE_STATUS = 'CHANGE_STATUS'
 ```
 
-## @ 定义突变 `mutation`
+## 定义突变 `mutation`
 
 ```javascript
 import * as types from './mutation-types'
@@ -58,7 +58,7 @@ export default {
 }
 ```
 
-## @ 定义`action`
+## 定义`action`
 
 ```javascript
 import * as types from './mutation-types'
@@ -68,13 +68,13 @@ export const changeStatus = ({ commit }, status) => {
 }
 ```
 
-## @ 定义 `getter`
+## 定义 `getter`
 
 ```javascript
 export const getStatus = state => state. status
 ```
 
-## @ 注入
+## 注入
 
 ```javascript
 new Vue({
@@ -88,7 +88,7 @@ new Vue({
 }).$mount('#app')
 ```
 
-## @ 调用
+## 调用
 
 ```javascript
 export default {
@@ -110,6 +110,6 @@ export default {
 }
 ```
 
-## @ 参考
+# @参考
 
 [Vuex 是什么？](https://vuex.vuejs.org/zh-cn/intro.html)

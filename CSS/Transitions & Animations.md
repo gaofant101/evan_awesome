@@ -1,4 +1,4 @@
-# @ `Transitions` & `Animations`
+# @`Transitions` & `Animations`
 
 `CSS3` 引入 `Transitions` & `Animations` 能是的前端开发人员具备了交互能力.
 
@@ -6,7 +6,7 @@
 
 `CSS3 Animations` 允许在多个关键帧中更改元素的外观和行为.转换提供从一个状态到另一个状态的变化,而动画可以在不同的关键帧上设置多个转换点.
 
-## @ `Transitions`
+## @`Transitions`
 
 如前所述,为了进行转换,元素必须有状态变化,并且必须为每个状态识别不同的样式.用于确定不同风格的最简单的方法是使用 `:hover` , `:focus` , `:active` ,和 `:target` 伪类.
 
@@ -244,8 +244,8 @@
 }
 ```
 
-## @ 参考
+# @参考
 
-<a href="https://developers.google.com/web/fundamentals/design-and-ux/animations/" target="_blank">Web Fundamentals 动画</a>
+[Web Fundamentals 动画](https://developers.google.com/web/fundamentals/design-and-ux/animations/)
 
-<a href="https://learn.shayhowe.com/advanced-html-css/transitions-animations/" target="_blank">transitions-animations</a>
+[transitions-animations](https://learn.shayhowe.com/advanced-html-css/transitions-animations/)

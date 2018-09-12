@@ -1,4 +1,4 @@
-## @ `XMLHttpRequest Level 2`
+# @`XMLHttpRequest Level 2`
 
 新版本的`XMLHttpRequest`对象,增强了一些新功能
 - 设置超时

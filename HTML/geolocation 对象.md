@@ -1,7 +1,21 @@
-## @ `geolocation`
+# @`geolocation`
 
-地理位置 `API` 允许用户向 `Web` 应用程序提供他们的位置.   
-出于隐私考虑,报告地理位置前会先请求用户许可.（部分浏览器需要域名为 `HTTPS` 才能使用这个接口）    
+地理位置 `API` 允许用户向 `Web` 应用程序提供他们的位置.
+出于隐私考虑,报告地理位置前会先请求用户许可.（部分浏览器需要域名为 `HTTPS` 才能使用这个接口）
+
+## `Api`
+
+`Geolocation` 接口不继承任何方法
+
+`Geolocation.getCurrentPosition()`
+确定设备的位置并返回一个携带位置信息的 Position 对象
+
+`Geolocation.watchPosition()`
+注册一个位置改变监听器, 每当设备位置改变时, 返回一个 long 类型的该监听器的ID值
+
+`Geolocation.clearWatch()`
+取消由 watchPosition()注册的位置监听器
+
 ```javascript
 function geoFindMe() {
     var output = document.getElementById("out");

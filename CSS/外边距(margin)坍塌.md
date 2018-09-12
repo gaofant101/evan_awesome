@@ -1,8 +1,8 @@
-# @ 外边距坍塌 `(margin)` [译]
+# @外边距坍塌 `(margin)` [译]
 
 W3C规范定义如下塌陷边距:"在本说明书中,表达式折叠边距意味着两个或更多个框(可能彼此相邻或嵌套)的相邻边距(无空的内容,填充或边框区域或间隙分开)合并形成单边距".
 
-## @ 规则
+## 规则
 
 简单来说,这个定义表明
 - 当两个元素的垂直边距相互接触时,只有具有最大边距值的元素的边距才能得到兑现,而具有较小边距值的元素的边距将被折叠为零.
@@ -17,7 +17,7 @@ W3C规范定义如下塌陷边距:"在本说明书中,表达式折叠边距意�
 - 已清除的元素(它们不会将其顶部边距与其父块的底边缘折叠起来).
 - 根元素
 
-## @ 相邻元素之间的边缘缩小
+## 相邻元素之间的边缘缩小
 
 边缘在相邻元素之间崩溃.简单来说,这意味着对于正常文档流程中的相邻垂直块级元素,只有具有最大边距值的元素的边距才能被保证,而具有较小边距值的元素的边距将被折叠为零.例如,如果一个元素具有25px底部边距,并且其下方的元素具有20px顶部边距,则仅执行25px底部边距,并且元素将保持25px彼此相距的距离.他们不会像45px(25 + 20),可以预期的那样.
 
@@ -36,7 +36,7 @@ p {
 
 元素之间的差距只有25px更小,边距已经缩小为零.如果在上面的例子中,元素的边距相等(比如说每个都有20个像素),那么它们之间的距离就只有这个20px.
 
-## @ 父母和子元素之间的边缘缩小
+## 父母和子元素之间的边缘缩小
 
 到目前为止,我们只处理了相邻元素的崩溃效应,但对于边缘接触的父母和子女来说,相同的过程也是如此."触摸”是指相邻边距之间不存在填充,边框或内容的地方.在以下示例中,父元素具有设置顶部边距的子元素:
 
@@ -78,12 +78,8 @@ p {
 
 ![](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/04/1398314949css-box-model_collapsing-margins3.png)
 
-## @ 结语
+# @参考
 
-关于外边距坍塌,本人很少遇到,也很少在项目中去定义了`margin-bottom` 又定义 `margin-top` , 习惯了`margin-bottom` or 用内边距`padding` 去定义;
+[collapsing-margins](https://www.sitepoint.com/collapsing-margins/)
 
-## @ 参考
-
-<a href="https://www.sitepoint.com/collapsing-margins/" target="_blank">collapsing-margins</a>
-
-<a href="https://css-tricks.com/what-you-should-know-about-collapsing-margins/" target="_blank">what-you-should-know-about-collapsing-margins</a>
+[what-you-should-know-about-collapsing-margins](https://css-tricks.com/what-you-should-know-about-collapsing-margins/)
